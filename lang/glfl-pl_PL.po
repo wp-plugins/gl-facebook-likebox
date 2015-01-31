@@ -1,0 +1,149 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: GL Facebook Likebox\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-16 21:55+0100\n"
+"PO-Revision-Date: 2011-01-16 21:55+0100\n"
+"Last-Translator: Krystian Marcisz <simivar@gmail.com>\n"
+"Language-Team: Krystian 'simivar' Marcisz <simivar@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: POLAND\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../gl-facebook-likebox/gl-facebook-likebox.php:127
+msgid "GL Facebook Likebox options"
+msgstr "Opcje GL Facebook Likebox"
+
+#: ../gl-facebook-likebox/php/main.php:1
+msgid "Settings"
+msgstr "Ustawienia"
+
+#: ../gl-facebook-likebox/php/main.php:5
+msgid "Page URL"
+msgstr "Adres URL"
+
+#: ../gl-facebook-likebox/php/main.php:7
+msgid "e.g. <i>http://www.facebook.com/pages/SelenaGomezcompl/147365415319232</i>"
+msgstr "np. <i>http://www.facebook.com/pages/SelenaGomezcompl/147365415319232</i>"
+
+#: ../gl-facebook-likebox/php/main.php:10
+msgid "Position:"
+msgstr "Położenie:"
+
+#: ../gl-facebook-likebox/php/main.php:11
+msgid "right"
+msgstr "prawo"
+
+#: ../gl-facebook-likebox/php/main.php:12
+msgid "left"
+msgstr "lewo"
+
+#: ../gl-facebook-likebox/php/main.php:13
+msgid "Position of our Facebook Likebox, default: right."
+msgstr "Położenie naszego 'widgeta', default: prawo."
+
+#: ../gl-facebook-likebox/php/main.php:16
+msgid "Color scheme:"
+msgstr "Schemat kolorów:"
+
+#: ../gl-facebook-likebox/php/main.php:17
+msgid "light"
+msgstr "jasne"
+
+#: ../gl-facebook-likebox/php/main.php:18
+msgid "dark"
+msgstr "ciemne"
+
+#: ../gl-facebook-likebox/php/main.php:19
+msgid "Choose color scheme! : )"
+msgstr "Wybierz schemat kolorów! : )"
+
+#: ../gl-facebook-likebox/php/main.php:22
+msgid "Show faces:"
+msgstr "Pokaż twarze:"
+
+#: ../gl-facebook-likebox/php/main.php:23
+#: ../gl-facebook-likebox/php/main.php:29
+#: ../gl-facebook-likebox/php/main.php:35
+msgid "yes"
+msgstr "tak"
+
+#: ../gl-facebook-likebox/php/main.php:24
+#: ../gl-facebook-likebox/php/main.php:30
+#: ../gl-facebook-likebox/php/main.php:36
+msgid "no"
+msgstr "nie"
+
+#: ../gl-facebook-likebox/php/main.php:25
+msgid "Have to display faces?"
+msgstr "Wyświetlić twarze?"
+
+#: ../gl-facebook-likebox/php/main.php:28
+msgid "Show stream:"
+msgstr "Pokaż wpisy?"
+
+#: ../gl-facebook-likebox/php/main.php:31
+msgid "Show stream [newest posts on facebook page]?"
+msgstr "Wyświetlić wpisy [najnowsze posty na stronie facebooka]?"
+
+#: ../gl-facebook-likebox/php/main.php:34
+msgid "Show header:"
+msgstr "Pokaż header:"
+
+#: ../gl-facebook-likebox/php/main.php:37
+msgid "Show the facebook header of Likebox?"
+msgstr "Wyświetlić facebook'owy header Likeboxa?"
+
+#: ../gl-facebook-likebox/php/main.php:40
+msgid "Update settings"
+msgstr "Aktualizuj ustawienia"
+
+#: ../gl-facebook-likebox/php/main.php:44
+msgid "Choose icon"
+msgstr "Wybierz ikonę"
+
+#: ../gl-facebook-likebox/php/main.php:104
+msgid "Change icon"
+msgstr "Zmień ikonę"
+
+#: ../gl-facebook-likebox/php/side.php:3
+msgid "About author"
+msgstr "O autorze"
+
+#: ../gl-facebook-likebox/php/side.php:5
+msgid "WP Extended profile"
+msgstr "Profil WP Extended"
+
+#: ../gl-facebook-likebox/php/side.php:6
+msgid "Homepage"
+msgstr "Strona domowa"
+
+#: ../gl-facebook-likebox/php/side.php:7
+msgid "Selena Gomez Polish Fansite"
+msgstr "Polski Fansite Seleny Gomez"
+
+#: ../gl-facebook-likebox/php/side.php:10
+msgid "My other plugins"
+msgstr "Moje inne pluginy"
+
+#: ../gl-facebook-likebox/php/side.php:15
+msgid "Thanks a lot to..."
+msgstr "Wielkie dzięki dla..."
+
+#: ../gl-facebook-likebox/php/side.php:17
+msgid "FacebookIcon.net for facebook icons"
+msgstr "FacebookIcon.net za ikony facebook'a"
+
+#: ../gl-facebook-likebox/php/side.php:18
+msgid "Facebook for LikeBox code"
+msgstr "Facebook'owi za kod LikeBox"
+
+#: ../gl-facebook-likebox/php/side.php:19
+msgid "jQuery team for jQuery 1.4.4"
+msgstr "drużynie jQuery za jQuery 1.4.4"
+
