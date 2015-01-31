@@ -5,13 +5,13 @@ Plugin URI: http://simivar.net/plugins/gl-facebook-likebox/
 Description: Adds a great-lookin' Facebook Likebox to Your site.
 Author: Krystian 'Simivar' Marcisz
 Author URI: http://www.simivar.net/
-Version: 1.0.2
+Version: 1.0.3
 Text Domain: glfl
 Domain Path: /lang/
 */
 
 ## Define author and plugin version
-define('GLFL_VERSION', '1.0.2');
+define('GLFL_VERSION', '1.0.3');
 define('GLFL_AUTHOR', 'Krystian "Simivar" Marcisz');
 
 if ( !function_exists( 'glfl_show' ) ) :
@@ -33,7 +33,7 @@ function glfl_show() {
 			'faces' => 'true',
 			'stream' => 'false',
 			'header' => 'false',
-			'position' => 'glflright',
+			'position' => 'right',
 			'icon' => '0'
 		);
 		
@@ -53,12 +53,9 @@ $plugin_directory = basename( dirname( __FILE__ ) );
 $pluginurl = WP_PLUGIN_URL . '/' . $plugin_directory . '/';
 
 if ( !function_exists( 'glfl_jqueryinit' ) ) :
-## Include newest jQuery & our script
+## Include our script
 function glfl_jqueryinit() {
 	global $pluginurl;
-		wp_deregister_script( 'jquery' );
-		wp_register_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js');
-		wp_enqueue_script( 'jquery' );
 	wp_register_script( 'glfljs', $pluginurl . 'js/script.js');
 	wp_enqueue_script( 'glfljs' );
 } 
@@ -69,7 +66,7 @@ if ( !function_exists( 'glfl_AdminStyles' ) ) :
 ## - admin page
 function glfl_AdminStyles(){
 	global $pluginurl;
-	wp_register_style( "glfl-adminstyle",  $pluginurl . 'css/admin.css', null, '1.0.2'); 
+	wp_register_style( "glfl-adminstyle",  $pluginurl . 'css/admin.css', null, '1.0.3'); 
 	wp_enqueue_style( 'glfl-adminstyle' );
 }
 endif;
@@ -78,7 +75,7 @@ if ( !function_exists( 'glfl_styles' ) ) :
 ## - blog page
 function glfl_styles(){
 	global $pluginurl;
-	wp_register_style( "glfl-styles",  $pluginurl . 'css/style.css', null, '1.0.2'); 
+	wp_register_style( "glfl-styles",  $pluginurl . 'css/style.css', null, '1.0.3'); 
 	wp_enqueue_style( 'glfl-styles' );
 }
 endif;
@@ -103,7 +100,7 @@ function glfl_settings_page() {
 			'faces' => 'true',
 			'stream' => 'false',
 			'header' => 'false',
-			'position' => 'glflright',
+			'position' => 'right',
 			'icon' => '0'
 		);
 		

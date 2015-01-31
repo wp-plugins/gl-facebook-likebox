@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: GL Facebook Likebox\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-01-16 21:55+0100\n"
-"PO-Revision-Date: 2011-01-16 21:55+0100\n"
+"PO-Revision-Date: 2015-01-31 17:08+0100\n"
 "Last-Translator: Krystian Marcisz <simivar@gmail.com>\n"
 "Language-Team: Krystian 'simivar' Marcisz <simivar@gmail.com>\n"
 "MIME-Version: 1.0\n"
@@ -11,8 +11,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-KeywordsList: _e;__\n"
 "X-Poedit-Basepath: ..\n"
-"X-Poedit-Language: English\n"
-"X-Poedit-Country: POLAND\n"
+"Language: en_PL\n"
+"X-Generator: Poedit 1.6.9\n"
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../gl-facebook-likebox/gl-facebook-likebox.php:127
@@ -28,7 +28,7 @@ msgid "Page URL"
 msgstr ""
 
 #: ../gl-facebook-likebox/php/main.php:7
-msgid "e.g. <i>http://www.facebook.com/pages/SelenaGomezcompl/147365415319232</i>"
+msgid "e.g. <i>https://www.facebook.com/RapGeniusPolska</i>"
 msgstr ""
 
 #: ../gl-facebook-likebox/php/main.php:10
@@ -119,14 +119,6 @@ msgstr ""
 msgid "WP Extended profile"
 msgstr ""
 
-#: ../gl-facebook-likebox/php/side.php:6
-msgid "Homepage"
-msgstr ""
-
-#: ../gl-facebook-likebox/php/side.php:7
-msgid "Selena Gomez Polish Fansite"
-msgstr ""
-
 #: ../gl-facebook-likebox/php/side.php:10
 msgid "My other plugins"
 msgstr ""
@@ -146,4 +138,3 @@ msgstr ""
 #: ../gl-facebook-likebox/php/side.php:19
 msgid "jQuery team for jQuery 1.4.4"
 msgstr ""
-
