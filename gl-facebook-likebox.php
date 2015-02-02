@@ -5,13 +5,13 @@ Plugin URI: http://simivar.net/plugins/gl-facebook-likebox/
 Description: Adds a great-lookin' Facebook Likebox to Your site.
 Author: Krystian 'Simivar' Marcisz
 Author URI: http://www.simivar.net/
-Version: 1.0.5
+Version: 1.0.6
 Text Domain: glfl
 Domain Path: /lang/
 */
 
 ## Define author and plugin version
-define('GLFL_VERSION', '1.0.5');
+define('GLFL_VERSION', '1.0.6');
 define('GLFL_AUTHOR', 'Krystian "Simivar" Marcisz');
 
 if ( !function_exists( 'glfl_show' ) ) :
@@ -44,6 +44,7 @@ function glfl_show() {
 	echo '<div id="facebook-icon" class="icon_'.$icon.'"></div>';
 	echo '<div id="facebook-app">';
 	echo '<iframe src="http://www.facebook.com/plugins/likebox.php?href='.$pageurl.'&amp;width=237&amp;colorscheme='.$colorscheme.'&amp;show_faces='.$faces.'&amp;stream='.$stream.'&amp;header='.$header.'&amp;height=475" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:237px; height:475px;" allowTransparency="true"></iframe>';
+	echo '</div>';
 	echo '</div>';
 }	
 endif;
@@ -79,7 +80,7 @@ if ( !function_exists( 'glfl_AdminStyles' ) ) :
 ## - admin page
 function glfl_AdminStyles(){
 	global $pluginurl;
-	wp_register_style( "glfl-adminstyle",  $pluginurl . 'css/admin.css', null, '1.0.5'); 
+	wp_register_style( "glfl-adminstyle",  $pluginurl . 'css/admin.css', null, '1.0.6'); 
 	wp_enqueue_style( 'glfl-adminstyle' );
 }
 endif;
@@ -88,7 +89,7 @@ if ( !function_exists( 'glfl_styles' ) ) :
 ## - blog page
 function glfl_styles(){
 	global $pluginurl;
-	wp_register_style( "glfl-styles",  $pluginurl . 'css/style.css', null, '1.0.5'); 
+	wp_register_style( "glfl-styles",  $pluginurl . 'css/style.css', null, '1.0.6'); 
 	wp_enqueue_style( 'glfl-styles' );
 }
 endif;
