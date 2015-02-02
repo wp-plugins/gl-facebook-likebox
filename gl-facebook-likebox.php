@@ -43,7 +43,7 @@ function glfl_show() {
 	echo '<div id="facebook-'.$position.'" style="top: '.$fromtop.';">';
 	echo '<div id="facebook-icon" class="icon_'.$icon.'"></div>';
 	echo '<div id="facebook-app">';
-	echo '<iframe src="http://www.facebook.com/plugins/likebox.php?href='.$pageurl.'&amp;width=237&amp;colorscheme='.$colorscheme.'&amp;show_faces='.$faces.'&amp;stream='.$stream.'&amp;header='.$header.'&amp;height=475" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:237px; height:475px;" allowTransparency="true"></iframe>';
+	echo '<iframe src="http://www.facebook.com/plugins/likebox.php?href='.$pageurl.'&ampshow_border=false&amp;width=237&amp;colorscheme='.$colorscheme.'&amp;show_faces='.$faces.'&amp;stream='.$stream.'&amp;header='.$header.'&amp;height=475" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:237px; height:475px;" allowTransparency="true"></iframe>';
 	echo '</div>';
 	echo '</div>';
 }	
