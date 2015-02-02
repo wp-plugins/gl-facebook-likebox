@@ -4,7 +4,7 @@ Plugin URI: http://simivar.net/plugins/gl-facebook-likebox/
 Description: Adds a great-lookin' Facebook Likebox to Your site.
 Author: Krystian 'Simivar' Marcisz
 Author URI: http://www.simivar.net/
-Version: 1.0.4
+Version: 1.0.5
 Text Domain: glfl
 Domain Path: /lang/
 -->
@@ -46,6 +46,11 @@ Domain Path: /lang/
 		  <td><input type="radio" id="header" name="header" <?php if($header == 'true') echo 'checked="checked"'; ?> value="true" /><?php _e('yes', 'glfl'); ?>
 					&nbsp;<input type="radio" id="header" <?php if($header == 'false') echo 'checked="checked"'; ?> name="header" value="false" /><?php _e('no', 'glfl'); ?></td>
 		  <td class="extra small"><?php _e('Show the facebook header of Likebox?', 'glfl'); ?></td>
+		</tr>
+		<tr>
+		  <td><label for="fromtop"><?php _e('Distance from the top', 'glfl');?></label></td>
+		  <td><input type="text" id="fromtop" name="fromtop" value="<?php echo $fromtop ?>" /></td>
+		  <td class="extra small"><?php printf( __('In pixels, percents: see <a href=\"%d\">CSS top property</a>', 'glfl'), 'http://www.w3schools.com/cssref/pr_pos_top.asp' ); ?></td>
 		</tr>
 		<tr>
 			<td colspan="3"><input type="submit" id="Glflsubmit" name="Glflsubmit" class="button button-primary" value="<?php _e('Update settings', 'glfl'); ?>" /></td>

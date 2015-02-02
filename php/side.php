@@ -4,7 +4,7 @@ Plugin URI: http://simivar.net/plugins/gl-facebook-likebox/
 Description: Adds a great-lookin' Facebook Likebox to Your site.
 Author: Krystian 'Simivar' Marcisz
 Author URI: http://www.simivar.net/
-Version: 1.0.4
+Version: 1.0.5
 Text Domain: glfl
 Domain Path: /lang/
 -->
@@ -23,6 +23,6 @@ Domain Path: /lang/
 	<ul class="menu">
 		<li><a href="http://facebookicon.net/"><?php _e('FacebookIcon.net for facebook icons', 'glfl'); ?></a></li>
 		<li><a href="http://developers.facebook.com/docs/reference/plugins/like-box/"><?php _e('Facebook for LikeBox code', 'glfl'); ?></a></li>
-		<li><a href="http://jquery.com/"><?php _e('jQuery team for jQuery 1.4.4', 'glfl'); ?></a></li>
+		<li><a href="http://jquery.com/"><?php _e('jQuery team for jQuery', 'glfl'); ?></a></li>
     </ul>
 </div>

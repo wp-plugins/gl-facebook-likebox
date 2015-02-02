@@ -5,13 +5,13 @@ Plugin URI: http://simivar.net/plugins/gl-facebook-likebox/
 Description: Adds a great-lookin' Facebook Likebox to Your site.
 Author: Krystian 'Simivar' Marcisz
 Author URI: http://www.simivar.net/
-Version: 1.0.4
+Version: 1.0.5
 Text Domain: glfl
 Domain Path: /lang/
 */
 
 ## Define author and plugin version
-define('GLFL_VERSION', '1.0.3');
+define('GLFL_VERSION', '1.0.5');
 define('GLFL_AUTHOR', 'Krystian "Simivar" Marcisz');
 
 if ( !function_exists( 'glfl_show' ) ) :
@@ -25,6 +25,7 @@ function glfl_show() {
 	$header = $options['header'];
 	$position = $options['position'];
 	$icon = $options['icon'];
+	$fromtop = $options['fromtop'];
 	
 	if (!is_array( $options ))
 		$options = array(
@@ -34,11 +35,12 @@ function glfl_show() {
 			'stream' => 'false',
 			'header' => 'false',
 			'position' => 'right',
-			'icon' => '0'
+			'icon' => '0',
+			'fromtop' => '10%',
 		);
 		
 	## Our 'widget' content
-	echo '<div id="facebook-'.$position.'">';
+	echo '<div id="facebook-'.$position.'" style="top: '.$fromtop.';">';
 	echo '<div id="facebook-icon" class="icon_'.$icon.'"></div>';
 	echo '<div id="facebook-app">';
 	echo '<iframe src="http://www.facebook.com/plugins/likebox.php?href='.$pageurl.'&amp;width=237&amp;colorscheme='.$colorscheme.'&amp;show_faces='.$faces.'&amp;stream='.$stream.'&amp;header='.$header.'&amp;height=475" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:237px; height:475px;" allowTransparency="true"></iframe>';
@@ -51,6 +53,17 @@ $plugin_directory = basename( dirname( __FILE__ ) );
 
 ## Take a URL to plugin dir
 $pluginurl = WP_PLUGIN_URL . '/' . $plugin_directory . '/';
+
+if ( !function_exists( 'glfl_add_settings_link' ) ) : 
+## Add settings URL to plugins page
+function glfl_add_settings_link( $links ) {
+    $settings_link = '<a href="options-general.php?page=glfl">' . __( 'Settings' ) . '</a>';
+    array_push( $links, $settings_link );
+  	return $links;
+}
+$plugin = plugin_basename( __FILE__ );
+add_filter( "plugin_action_links_" . plugin_basename(__FILE__), 'glfl_add_settings_link' );
+endif;
 
 if ( !function_exists( 'glfl_jqueryinit' ) ) :
 ## Include our script
@@ -66,7 +79,7 @@ if ( !function_exists( 'glfl_AdminStyles' ) ) :
 ## - admin page
 function glfl_AdminStyles(){
 	global $pluginurl;
-	wp_register_style( "glfl-adminstyle",  $pluginurl . 'css/admin.css', null, '1.0.3'); 
+	wp_register_style( "glfl-adminstyle",  $pluginurl . 'css/admin.css', null, '1.0.5'); 
 	wp_enqueue_style( 'glfl-adminstyle' );
 }
 endif;
@@ -75,7 +88,7 @@ if ( !function_exists( 'glfl_styles' ) ) :
 ## - blog page
 function glfl_styles(){
 	global $pluginurl;
-	wp_register_style( "glfl-styles",  $pluginurl . 'css/style.css', null, '1.0.3'); 
+	wp_register_style( "glfl-styles",  $pluginurl . 'css/style.css', null, '1.0.5'); 
 	wp_enqueue_style( 'glfl-styles' );
 }
 endif;
@@ -101,7 +114,8 @@ function glfl_settings_page() {
 			'stream' => 'false',
 			'header' => 'false',
 			'position' => 'right',
-			'icon' => '0'
+			'icon' => '0',
+			'fromtop' => '10%',
 		);
 		
 	## form posted?
@@ -113,6 +127,7 @@ function glfl_settings_page() {
 		$options['stream'] = strip_tags(stripslashes($_POST['stream']));
 		$options['header'] = strip_tags(stripslashes($_POST['header']));
 		$options['position'] = strip_tags(stripslashes($_POST['position']));
+		$options['fromtop'] = strip_tags(stripcslashes($_POST['fromtop']));
 		update_option("glfl_show", $options);
 	}
 	
@@ -129,6 +144,7 @@ function glfl_settings_page() {
 	$header = htmlspecialchars($options['header'], ENT_QUOTES);
 	$position = $options['position'];
 	$icon = $options['icon'];
+	$fromtop = htmlspecialchars($options['fromtop'], ENT_QUOTES);
 ?>
 <div class="wrap glfl">
 		<div class="icon32" id="icon-options-general"><br></div>

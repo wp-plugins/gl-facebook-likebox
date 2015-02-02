@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: GL Facebook Likebox\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-01-16 21:55+0100\n"
-"PO-Revision-Date: 2015-01-31 17:08+0100\n"
+"PO-Revision-Date: 2015-02-02 09:26+0100\n"
 "Last-Translator: Krystian Marcisz <simivar@gmail.com>\n"
 "Language-Team: Krystian 'simivar' Marcisz <simivar@gmail.com>\n"
 "MIME-Version: 1.0\n"
@@ -12,7 +12,7 @@ msgstr ""
 "X-Poedit-KeywordsList: _e;__\n"
 "X-Poedit-Basepath: ..\n"
 "Language: en_PL\n"
-"X-Generator: Poedit 1.6.9\n"
+"X-Generator: Poedit 1.7.4\n"
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../gl-facebook-likebox/gl-facebook-likebox.php:127
@@ -97,6 +97,14 @@ msgstr ""
 
 #: ../gl-facebook-likebox/php/main.php:37
 msgid "Show the facebook header of Likebox?"
+msgstr ""
+
+#: ../gl-facebook-likebox/php/main.php:51
+msgid "Distance from the top"
+msgstr ""
+
+#: ../gl-facebook-likebox/php/main.php:53
+msgid "In pixels, percents: see <a href=\"%d\">CSS top property</a>"
 msgstr ""
 
 #: ../gl-facebook-likebox/php/main.php:40
