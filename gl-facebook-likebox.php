@@ -11,7 +11,7 @@ Domain Path: /lang/
 */
 
 ## Define author and plugin version
-define('GLFL_VERSION', '1.0.6');
+define('GLFL_VERSION', '1.0.7');
 define('GLFL_AUTHOR', 'Krystian "Simivar" Marcisz');
 
 if ( !function_exists( 'glfl_show' ) ) :

@@ -4,7 +4,7 @@ Plugin URI: http://simivar.net/plugins/gl-facebook-likebox/
 Description: Adds a great-lookin' Facebook Likebox to Your site.
 Author: Krystian 'Simivar' Marcisz
 Author URI: http://www.simivar.net/
-Version: 1.0.5
+Version: 1.0.7
 Text Domain: glfl
 Domain Path: /lang/
 -->
@@ -109,6 +109,11 @@ Domain Path: /lang/
 				<div class="listitem <?php if($icon == '6') echo 'activeItem"'; ?>">
 					<a href="javascript:void(0);" onclick="changeItem('<?php echo $pluginurl; ?>img/6.png', 3, this.parentNode, 6);" onmousedown="return false;">
 						<img width="42" height="42" src="<?php echo $pluginurl; ?>img/6.png" style="background: none repeat scroll 0% 0% white;" alt="">
+					</a>
+				</div>
+				<div class="listitem <?php if($icon == '7') echo 'activeItem"'; ?>" style="width:150px;">
+					<a href="javascript:void(0);" onclick="changeItem('<?php echo $pluginurl; ?>img/7.png', 3, this.parentNode, 7);" onmousedown="return false;">
+						<img width="136" height="50" src="<?php echo $pluginurl; ?>img/7_reverted.png" style="background: none repeat scroll 0% 0% white;" alt="">
 					</a>
 				</div>
 			</td>

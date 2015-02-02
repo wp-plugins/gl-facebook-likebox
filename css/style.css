@@ -28,14 +28,10 @@ Domain Path: /lang/
 
 #facebook-right #facebook-icon {
     float: left;
-    height: 42px;
-    width: 42px;
 }
 
 #facebook-left #facebook-icon {
 	float: right;
-	height: 42px;
-    width: 42px;
 }
 
 
@@ -54,28 +50,48 @@ Domain Path: /lang/
 /* Icons set */
 .icon_0 {
 	background-image: url("../img/0.png");
+	height: 42px;
+    width: 42px;
 }
 
 .icon_1 {
 	background-image: url("../img/1.png");
+	height: 42px;
+    width: 42px;
 }
 
 .icon_2 {
 	background-image: url("../img/2.png");
+	height: 42px;
+    width: 42px;
 }
 
 .icon_3 {
 	background-image: url("../img/3.png");
+	height: 42px;
+    width: 42px;
 }
 
 .icon_4 {
 	background-image: url("../img/4.png");
+	height: 42px;
+    width: 42px;
 }
 
 .icon_5 {
 	background-image: url("../img/5.png");
+	height: 42px;
+    width: 42px;
 }
 
 .icon_6 {
 	background-image: url("../img/6.png");
+	height: 42px;
+    width: 42px;
+}
+
+.icon_7 {
+    background-image: url("../img/7.png");
+    height: 136px;
+    width: 50px;
 }
