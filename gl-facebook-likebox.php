@@ -5,7 +5,7 @@ Plugin URI: http://simivar.net/plugins/gl-facebook-likebox/
 Description: Adds a great-lookin' Facebook Likebox to Your site.
 Author: Krystian 'Simivar' Marcisz
 Author URI: http://www.simivar.net/
-Version: 1.0.6
+Version: 1.0.7
 Text Domain: glfl
 Domain Path: /lang/
 */
@@ -80,7 +80,7 @@ if ( !function_exists( 'glfl_AdminStyles' ) ) :
 ## - admin page
 function glfl_AdminStyles(){
 	global $pluginurl;
-	wp_register_style( "glfl-adminstyle",  $pluginurl . 'css/admin.css', null, '1.0.6'); 
+	wp_register_style( "glfl-adminstyle",  $pluginurl . 'css/admin.css', null, '1.0.7'); 
 	wp_enqueue_style( 'glfl-adminstyle' );
 }
 endif;
@@ -89,7 +89,7 @@ if ( !function_exists( 'glfl_styles' ) ) :
 ## - blog page
 function glfl_styles(){
 	global $pluginurl;
-	wp_register_style( "glfl-styles",  $pluginurl . 'css/style.css', null, '1.0.6'); 
+	wp_register_style( "glfl-styles",  $pluginurl . 'css/style.css', null, '1.0.7'); 
 	wp_enqueue_style( 'glfl-styles' );
 }
 endif;

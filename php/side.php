@@ -4,7 +4,7 @@ Plugin URI: http://simivar.net/plugins/gl-facebook-likebox/
 Description: Adds a great-lookin' Facebook Likebox to Your site.
 Author: Krystian 'Simivar' Marcisz
 Author URI: http://www.simivar.net/
-Version: 1.0.5
+Version: 1.0.7
 Text Domain: glfl
 Domain Path: /lang/
 -->
